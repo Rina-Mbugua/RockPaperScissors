@@ -10,8 +10,8 @@ function getComputerChoice() {
     }
 }
 
-const selectedOption = getComputerChoice();
-console.log("Selected Option:", selectedOption)
+const computerOption = getComputerChoice();
+console.log("Computer's Choice:", computerOption)
 
 function playSelection() {
     const userOption = prompt("Select an option: Rock, Paper or Scissors").toLowerCase(); //Convert to lowercase. userOption is the prompt that will contain the user's answer  
@@ -28,8 +28,8 @@ const { message, option: userOption } = playSelection();
 console.log(message);
 
 
-function playRound(userOption, selectedOption) {
-    if (selectedOption === "rock") {
+function playRound(userOption, computerOptionOption) {
+    if (computerOption === "rock") {
         if (userOption === "scissors") {
             return "You lose!";
         } else if (userOption === "paper") {
@@ -37,7 +37,7 @@ function playRound(userOption, selectedOption) {
         } else {
             return "It's a draw!";
         }
-    } else if (selectedOption === "scissors") {
+    } else if (computerOption === "scissors") {
         if (userOption === "rock") {
             return "You win!";
         } else if (userOption === "paper") {
@@ -45,32 +45,32 @@ function playRound(userOption, selectedOption) {
         } else {
             return "It's a draw!";
         }
-    } else if (selectedOption === "paper") {
+    } else if (computerOption === "paper") {
         if (userOption === "rock") {
             return "You lose!";
         } else if (userOption === "scissors") {
             return "You win!";
         } else {
-            return "It's a draw"
+            return "It's a draw";
         }
     }
 }
 
-const winnerMessage = playRound(userOption, selectedOption);
+const winnerMessage = playRound(userOption, computerOption);
 console.log(winnerMessage);
 
 let userScore = 0;
 let computerScore = 0;
 
 for (let round = 1; round <= 3; round++) {
-    const selectedOption = getComputerChoice();
+    const computerOption = getComputerChoice();
     console.log(`Round ${round}`);
-    console.log("Selected Option:", selectedOption);
+    console.log("Computer Choice:", computerOption);
 
     const { message, option: userOption } = playSelection();
     console.log(message);
 
-    const roundWinner = playRound(userOption, selectedOption);
+    const roundWinner = playRound(userOption, computerOption);
     console.log(`Round ${round} Winner: ${roundWinner}`);
     
     if (roundWinner === "You") {
