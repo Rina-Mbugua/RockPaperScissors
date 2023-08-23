@@ -58,3 +58,27 @@ function playRound(userOption, selectedOption) {
 
 const winnerMessage = playRound(userOption, selectedOption);
 console.log(winnerMessage);
+
+let userScore = 0;
+let computerScore = 0;
+
+for (let round = 1; round <= 3; round++) {
+    const selectedOption = getComputerChoice();
+    console.log(`Round ${round}`);
+    console.log("Selected Option:", selectedOption);
+
+    const { message, option: userOption } = playSelection();
+    console.log(message);
+
+    const roundWinner = playRound(userOption, selectedOption);
+    console.log(`Round ${round} Winner: ${roundWinner}`);
+    
+    if (roundWinner === "You") {
+        userScore++;
+    } else if (roundWinner === "Computer") {
+        computerScore++;
+    }
+}
+
+console.log("Final Scores:");
+console.log(`You: ${userScore} | Computer: ${computerScore}`);
