@@ -28,7 +28,7 @@ const { message, option: userOption } = playSelection();
 console.log(message);
 
 
-function determineWinner(userOption, selectedOption) {
+function playRound(userOption, selectedOption) {
     if (selectedOption === "rock") {
         if (userOption === "scissors") {
             return "You lose!";
@@ -56,5 +56,5 @@ function determineWinner(userOption, selectedOption) {
     }
 }
 
-const winnerMessage = determineWinner(userOption, selectedOption);
+const winnerMessage = playRound(userOption, selectedOption);
 console.log(winnerMessage);
