@@ -47,9 +47,9 @@ function playRound(userOption, selectedOption) {
         }
     } else if (selectedOption === "paper") {
         if (userOption === "rock") {
-            return "You win!";
-        } else if (userOption === "scissors") {
             return "You lose!";
+        } else if (userOption === "scissors") {
+            return "You win!";
         } else {
             return "It's a draw"
         }
