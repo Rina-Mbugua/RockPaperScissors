@@ -27,10 +27,34 @@ function playSelection() {
 const { message, option: userOption } = playSelection();
 console.log(message);
 
-function isDraw(userOption, selectedOption) {
-    return userOption === selectedOption;
+
+function determineWinner(userOption, selectedOption) {
+    if (selectedOption === "rock") {
+        if (userOption === "scissors") {
+            return "You lose!";
+        } else if (userOption === "paper") {
+            return "You win!";
+        } else {
+            return "It's a draw!";
+        }
+    } else if (selectedOption === "scissors") {
+        if (userOption === "rock") {
+            return "You win!";
+        } else if (userOption === "paper") {
+            return "You lose!";
+        } else {
+            return "It's a draw!";
+        }
+    } else if (selectedOption === "paper") {
+        if (userOption === "rock") {
+            return "You win!";
+        } else if (userOption === "scissors") {
+            return "You lose!";
+        } else {
+            return "It's a draw"
+        }
+    }
 }
 
-const result = isDraw(userOption, selectedOption) ? "Draw!" : "Not a draw.";
-console.log(result);
-console.log(userOption);
+const winnerMessage = determineWinner(userOption, selectedOption);
+console.log(winnerMessage);
