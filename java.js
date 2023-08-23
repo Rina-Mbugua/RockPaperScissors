@@ -31,9 +31,9 @@ console.log(message);
 function playRound(userOption, selectedOption) {
     if (selectedOption === "rock") {
         if (userOption === "scissors") {
-            return "You lose!";
-        } else if (userOption === "paper") {
             return "You win!";
+        } else if (userOption === "paper") {
+            return "You lose!";
         } else {
             return "It's a draw!";
         }
