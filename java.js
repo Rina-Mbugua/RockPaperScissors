@@ -37,7 +37,7 @@ for (let round = 1; round <= 5; round++) {
     function playRound(userOption, computerOption) {
         if (computerOption === "rock") {
             if (userOption === "scissors") {
-                return "You lose!";
+                return "You Lose!";
             } else if (userOption === "paper") {
                 return "You Win!";
             } else {
@@ -47,13 +47,13 @@ for (let round = 1; round <= 5; round++) {
             if (userOption === "rock") {
                 return "You Win!";
             } else if (userOption === "paper") {
-                return "You lose!";
+                return "You Lose!";
             } else {
                 return "It's a draw!";
             }
         } else if (computerOption === "paper") {
             if (userOption === "rock") {
-                return "You lose!";
+                return "You Lose!";
             } else if (userOption === "scissors") {
                 return "You Win!";
             } else {
@@ -70,7 +70,7 @@ for (let round = 1; round <= 5; round++) {
     
     if (roundWinner === "You Win!") {
         userScore++;
-    } else if (roundWinner === "Computer Wins!") {
+    } else if (roundWinner === "You Lose!") {
         computerScore++;
     }
 
