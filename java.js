@@ -73,9 +73,9 @@ for (let round = 1; round <= 3; round++) {
     const roundWinner = playRound(userOption, computerOption);
     console.log(`Round ${round} Winner: ${roundWinner}`);
     
-    if (roundWinner === "You") {
+    if (roundWinner === "You Win!") {
         userScore++;
-    } else if (roundWinner === "Computer") {
+    } else if (roundWinner === "Computer Wins!") {
         computerScore++;
     }
 }
