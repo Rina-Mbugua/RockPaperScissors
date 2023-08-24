@@ -10,34 +10,6 @@ function getComputerChoice() {
     }
 }
 
-function playRound(userOption, computerOption) {
-    if (computerOption === "rock") {
-        if (userOption === "scissors") {
-            return "You lose!";
-        } else if (userOption === "paper") {
-            return "You win!";
-        } else {
-            return "It's a draw!";
-        }
-    } else if (computerOption === "scissors") {
-        if (userOption === "rock") {
-            return "You win!";
-        } else if (userOption === "paper") {
-            return "You lose!";
-        } else {
-            return "It's a draw!";
-        }
-    } else if (computerOption === "paper") {
-        if (userOption === "rock") {
-            return "You lose!";
-        } else if (userOption === "scissors") {
-            return "You win!";
-        } else {
-            return "It's a draw";
-        }
-    }
-}
-
 let userScore = 0;
 let computerScore = 0;
 
@@ -60,6 +32,36 @@ for (let round = 1; round <= 3; round++) {
             return { message:"Invalid input. Please select Rock, Paper or Scissors.", option: null}
         }
     }
+
+    //Determine Winner    
+    function playRound(userOption, computerOption) {
+        if (computerOption === "rock") {
+            if (userOption === "scissors") {
+                return "You lose!";
+            } else if (userOption === "paper") {
+                return "You win!";
+            } else {
+                return "It's a draw!";
+            }
+        } else if (computerOption === "scissors") {
+            if (userOption === "rock") {
+                return "You win!";
+            } else if (userOption === "paper") {
+                return "You lose!";
+            } else {
+                return "It's a draw!";
+            }
+        } else if (computerOption === "paper") {
+            if (userOption === "rock") {
+                return "You lose!";
+            } else if (userOption === "scissors") {
+                return "You win!";
+            } else {
+                return "It's a draw";
+            }
+        }
+    }
+
     const { message, option: userOption } = playSelection();
     console.log(message);
 
