@@ -28,7 +28,7 @@ const { message, option: userOption } = playSelection();
 console.log(message);
 
 
-function playRound(userOption, computerOptionOption) {
+function playRound(userOption, computerOption) {
     if (computerOption === "rock") {
         if (userOption === "scissors") {
             return "You lose!";
@@ -63,7 +63,7 @@ let userScore = 0;
 let computerScore = 0;
 
 for (let round = 1; round <= 3; round++) {
-    const computerOption = getComputerChoice();
+    const ComputerOption = getComputerChoice();
     console.log(`Round ${round}`);
     console.log("Computer Choice:", computerOption);
 
