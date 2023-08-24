@@ -13,7 +13,7 @@ function getComputerChoice() {
 let userScore = 0;
 let computerScore = 0;
 
-for (let round = 1; round <= 3; round++) {
+for (let round = 1; round <= 5; round++) {
     console.log(`Round ${round}`);
 
     //Get computer's choice 
