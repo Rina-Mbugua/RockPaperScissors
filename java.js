@@ -39,13 +39,13 @@ for (let round = 1; round <= 5; round++) {
             if (userOption === "scissors") {
                 return "You lose!";
             } else if (userOption === "paper") {
-                return "You win!";
+                return "You Win!";
             } else {
                 return "It's a draw!";
             }
         } else if (computerOption === "scissors") {
             if (userOption === "rock") {
-                return "You win!";
+                return "You Win!";
             } else if (userOption === "paper") {
                 return "You lose!";
             } else {
@@ -55,7 +55,7 @@ for (let round = 1; round <= 5; round++) {
             if (userOption === "rock") {
                 return "You lose!";
             } else if (userOption === "scissors") {
-                return "You win!";
+                return "You Win!";
             } else {
                 return "It's a draw";
             }
@@ -73,6 +73,8 @@ for (let round = 1; round <= 5; round++) {
     } else if (roundWinner === "Computer Wins!") {
         computerScore++;
     }
+
+    console.log(`Scores after Round ${round}: You - ${userScore} | Computer - ${computerScore}`);
 }
 
 console.log("Final Scores:");
