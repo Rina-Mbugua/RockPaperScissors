@@ -10,9 +10,6 @@ function getComputerChoice() {
     }
 }
 
-const computerOption = getComputerChoice();
-console.log("Computer's Choice:", computerOption)
-
 function playSelection() {
     const userOption = prompt("Select an option: Rock, Paper or Scissors").toLowerCase(); //Convert to lowercase. userOption is the prompt that will contain the user's answer  
     const validOptions = ["rock", "paper", "scissors"]; // Valid options in lowercase .validOption is the array that contains the valid options
@@ -63,9 +60,11 @@ let userScore = 0;
 let computerScore = 0;
 
 for (let round = 1; round <= 3; round++) {
-    const computerOption = getComputerChoice();
     console.log(`Round ${round}`);
-    console.log("Computer Choice:", computerOption);
+
+    //Get computer's choice 
+    const computerOption = getComputerChoice();
+    console.log("Computer's Choice:", computerOption)
 
     const { message, option: userOption } = playSelection();
     console.log(message);
