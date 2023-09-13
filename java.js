@@ -83,16 +83,16 @@ let computerScore = 0;
     const { message, option: userOption } = playSelection();
     console.log(message);
 
-    const roundWinner = playRound(userOption, computerOption);
-    console.log(`Round ${round} Winner: ${roundWinner}`);
+   // const roundWinner = playRound(userOption, computerOption);
+    //console.log(`Round ${round} Winner: ${roundWinner}`);
     
-    if (roundWinner === "You Win!") {
-        userScore++;
-    } else if (roundWinner === "You Lose!") {
-        computerScore++;
-    }
+   //if (roundWinner === "You Win!") {
+   //     userScore++;
+   // } else if (roundWinner === "You Lose!") {
+   //     computerScore++;
+  //  }
 
-    console.log(`Scores after Round ${round}: You - ${userScore} | Computer - ${computerScore}`);
+   // console.log(`Scores after Round ${round}: You - ${userScore} | Computer - ${computerScore}`);
 
 
 console.log("Final Scores:");
