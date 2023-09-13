@@ -10,6 +10,22 @@ function getComputerChoice() {
     }
 }
 
+//Setting up playerSelection buttons
+const rockBtn = document.getElementById('rock-Btn');
+    rockBtn.addEventListener('click', () => {
+        const output = "rock";
+    });
+
+const paperBtn = document.getElementById('paper-Btn');
+    paperBtn.addEventListener('click', () => {
+        const output = "paper";
+    });
+
+const scissorsBtn = document.getElementById('scissors-Btn')
+    scissorsBtn.addEventListener('click', () => {
+        const output = "scissors"
+    });
+
 let userScore = 0;
 let computerScore = 0;
 
