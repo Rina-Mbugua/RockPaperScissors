@@ -11,3 +11,30 @@ They present their options at the same time
     -Paper beats rock
     -Scissors beat Paper
 Whoever wins best of three is the winner overall 
+
+
+
+  
+//let userScore = 0;
+//let computerScore = 0;
+
+
+    
+
+   // const { message, option: userOption } = playSelection();
+   // console.log(message);
+
+   // const roundWinner = playRound(userOption, computerOption);
+    //console.log(`Round ${round} Winner: ${roundWinner}`);
+    
+   //if (roundWinner === "You Win!") {
+   //     userScore++;
+   // } else if (roundWinner === "You Lose!") {
+   //     computerScore++;
+  //  }
+
+   // console.log(`Scores after Round ${round}: You - ${userScore} | Computer - ${computerScore}`);
+
+
+//console.log("Final Scores:");
+//console.log(`You: ${userScore} | Computer: ${computerScore}`);

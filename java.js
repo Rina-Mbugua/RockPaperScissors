@@ -56,7 +56,6 @@ function playRound(userOption, computerOption) {
     }
 }
 
-
 const rockBtn = document.getElementById('rock-Btn');
     rockBtn.addEventListener('click', () => playRound("rock", getComputerChoice()));
 
