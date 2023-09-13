@@ -47,11 +47,6 @@ function playRound(userOption, computerOption) {
         }
     }
 
-    const roundWinner = document.createElement('div');
-        roundWinner.textContent = result;
-
-    roundWinner.appendChild(body)
-
 
     console.log("Result: " + result);
 
@@ -60,6 +55,13 @@ function playRound(userOption, computerOption) {
         console.log("Game Over!")
     }
 }
+
+const roundWinner = document.createElement('div');
+roundWinner.textContent = result;
+
+const container = document.getElementById('resultContainer');
+
+container.appendChild(roundWinner)
 
 const rockBtn = document.getElementById('rock-Btn');
     rockBtn.addEventListener('click', () => playRound("rock", getComputerChoice()));
