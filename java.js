@@ -11,19 +11,25 @@ function getComputerChoice() {
 }
 
 //Setting up playerSelection buttons
+
+let output;
+
 const rockBtn = document.getElementById('rock-Btn');
     rockBtn.addEventListener('click', () => {
         const output = "rock";
+        console.log("Button clicked. Output: " + output);
     });
 
 const paperBtn = document.getElementById('paper-Btn');
     paperBtn.addEventListener('click', () => {
         const output = "paper";
+        console.log("Button clicked. Output: " + output);
     });
 
 const scissorsBtn = document.getElementById('scissors-Btn')
     scissorsBtn.addEventListener('click', () => {
         const output = "scissors"
+        console.log("Button clicked. Output: " + output);
     });
 
 let userScore = 0;
