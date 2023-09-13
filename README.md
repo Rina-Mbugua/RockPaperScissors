@@ -10,4 +10,4 @@ They present their options at the same time
     -Rock beats scissors
     -Paper beats rock
     -Scissors beat Paper
-Whoever wins best of three is the winner overall
+Whoever wins best of three is the winner overall 
