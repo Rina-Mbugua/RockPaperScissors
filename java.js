@@ -78,18 +78,7 @@ let computerOption;
 
 
     
-
-        //const validOptions = ["rock", "paper", "scissors"]; // Valid options in lowercase .validOption is the array that contains the valid options
     
-       // if (validOptions.includes(userOption)) { // if the the option the user selected is INCLUDED in the array.
-       //     const userInput = userOption.charAt(0).toUpperCase() + userOption.slice(1); // Retreive the character which is the 0th index (The first character always starts at zero) and capitalize it ending at the 1st index (which is the second character)
-       //     return { message: `You selected ${userInput}!`, option: userOption}; // we are using the `` backticks here because it is a template literal. This allows for multiline stings, string interpolation with embedded expressions and special constructs. In this case we are creating a string by doing a substitution of a placeholder, which is a nother variable in out case.
-      //  }   else {
-      //      return { message:"Invalid input. Please select Rock, Paper or Scissors.", option: null}
-     //   }
-    
-
-    //Determine Winner    
     
 
     
