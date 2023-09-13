@@ -10,33 +10,10 @@ function getComputerChoice() {
     }
 }
 
-//Setting up playerSelection buttons
-
-let output;
-
-const rockBtn = document.getElementById('rock-Btn');
-    rockBtn.addEventListener('click', () => {
-        const output = "rock";
-        console.log("Button clicked. Output: " + output);
-    });
-
-const paperBtn = document.getElementById('paper-Btn');
-    paperBtn.addEventListener('click', () => {
-        const output = "paper";
-        console.log("Button clicked. Output: " + output);
-    });
-
-const scissorsBtn = document.getElementById('scissors-Btn')
-    scissorsBtn.addEventListener('click', () => {
-        const output = "scissors"
-        console.log("Button clicked. Output: " + output);
-    });
 
 let userScore = 0;
 let computerScore = 0;
 
-for (let round = 1; round <= 5; round++) {
-    console.log(`Round ${round}`);
 
     //Get computer's choice 
     const computerOption = getComputerChoice();
@@ -44,7 +21,26 @@ for (let round = 1; round <= 5; round++) {
 
     // Get user's choice
     function playSelection() {
-        const userOption = prompt("Select an option: Rock, Paper or Scissors").toLowerCase(); //Convert to lowercase. userOption is the prompt that will contain the user's answer  
+        let userOption;
+
+        const rockBtn = document.getElementById('rock-Btn');
+        rockBtn.addEventListener('click', () => {
+            const userOption = "rock";
+            console.log("Button clicked. Output: " + userOption);
+        });
+    
+    const paperBtn = document.getElementById('paper-Btn');
+        paperBtn.addEventListener('click', () => {
+            const userOption = "paper";
+            console.log("Button clicked. Output: " + userOption);
+        });
+    
+    const scissorsBtn = document.getElementById('scissors-Btn')
+        scissorsBtn.addEventListener('click', () => {
+            const userOption = "scissors"
+            console.log("Button clicked. Output: " + userOption);
+        }); 
+
         const validOptions = ["rock", "paper", "scissors"]; // Valid options in lowercase .validOption is the array that contains the valid options
     
         if (validOptions.includes(userOption)) { // if the the option the user selected is INCLUDED in the array.
@@ -97,7 +93,7 @@ for (let round = 1; round <= 5; round++) {
     }
 
     console.log(`Scores after Round ${round}: You - ${userScore} | Computer - ${computerScore}`);
-}
+
 
 console.log("Final Scores:");
 console.log(`You: ${userScore} | Computer: ${computerScore}`);
