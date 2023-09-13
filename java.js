@@ -47,6 +47,12 @@ function playRound(userOption, computerOption) {
         }
     }
 
+    const roundWinner = document.createElement('div');
+        roundWinner.textContent = result;
+
+    roundWinner.appendChild(body)
+
+
     console.log("Result: " + result);
 
     roundsPlayed++;
