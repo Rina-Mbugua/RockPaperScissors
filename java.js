@@ -17,7 +17,7 @@ let userScore = 0;
 let computerScore = 0;
 
 
-let roundsPlayed = 0;
+let roundsPlayed = 1;
 
 const scoreDiv = document.getElementById('scores')
 
