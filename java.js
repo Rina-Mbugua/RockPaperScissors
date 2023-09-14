@@ -76,6 +76,16 @@ function playRound(userOption, computerOption) {
 
    roundsPlayed++;
    if (roundsPlayed === 6) {
+        let overallResult;
+
+            if (userScore > computerScore) {
+                overallResult = "You Win!";
+            } else if (userScore < computerScore) {
+                overallResult = "Computer Wins!"
+            } else if (userScore = computerScore) {
+                overallResult = "It's a draw!"
+            }
+
        console.log("Game Over!")
    }
 
