@@ -75,7 +75,7 @@ function playRound(userOption, computerOption) {
    scoreDiv.textContent = `Scores after Round ${roundsPlayed}: You - ${userScore} | Computer - ${computerScore}`
 
    roundsPlayed++;
-   if (roundsPlayed === 5) {
+   if (roundsPlayed === 6) {
        console.log("Game Over!")
    }
 
