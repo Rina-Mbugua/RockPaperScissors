@@ -62,11 +62,6 @@ function playRound(userOption, computerOption) {
 
     console.log("Result: " + result);
 
-    roundsPlayed++;
-    if (roundsPlayed === 5) {
-        console.log("Game Over!")
-    }
-
 
  if (result === "You Win!") {
     userScore++
@@ -79,6 +74,10 @@ function playRound(userOption, computerOption) {
  
    scoreDiv.textContent = `Scores after Round ${roundsPlayed}: You - ${userScore} | Computer - ${computerScore}`
 
+   roundsPlayed++;
+   if (roundsPlayed === 5) {
+       console.log("Game Over!")
+   }
 
 }
 
