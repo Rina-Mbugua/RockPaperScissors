@@ -89,7 +89,11 @@ function playRound(userOption, computerOption) {
         const winner = document.getElementById('overallWinner');
             winner.textContent = overallResult
 
+
        console.log("Game Over!")
+
+       const restartButton = document.getElementById('replay-Btn');
+       restartButton.style.display = "block";
    }
 
 }
