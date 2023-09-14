@@ -16,6 +16,7 @@ let computerOption;
 let userScore = 0;
 let computerScore = 0;
 
+
 let roundsPlayed = 0;
 
 function playRound(userOption, computerOption) {
@@ -71,8 +72,14 @@ function playRound(userOption, computerOption) {
     computerScore++
  }
 
- console.log(userScore)
- console.log(computerScore)
+ console.log(`Scores after Round ${roundsPlayed}: You - ${userScore} | Computer - ${computerScore}`)
+
+ const runningScoreUser = document.createElement('div');
+    runningScoreUser.textContent = `Scores after Round ${roundsPlayed}: You - ${userScore} | Computer - ${computerScore}`
+
+const scoreDiv = document.getElementById('scores')
+ scoreDiv.appendChild(runningScoreUser)
+
 }
 
 
