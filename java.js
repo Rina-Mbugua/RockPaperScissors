@@ -81,10 +81,13 @@ function playRound(userOption, computerOption) {
             if (userScore > computerScore) {
                 overallResult = "You Win!";
             } else if (userScore < computerScore) {
-                overallResult = "Computer Wins!"
+                overallResult = "Computer Wins!";
             } else if (userScore = computerScore) {
-                overallResult = "It's a draw!"
+                overallResult = "It's a Draw!";
             }
+
+        const winner = document.getElementById('overallWinner');
+            winner.textContent = overallResult
 
        console.log("Game Over!")
    }
