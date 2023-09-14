@@ -109,3 +109,18 @@ const paperBtn = document.getElementById('paper-Btn');
 
 const scissorsBtn = document.getElementById('scissors-Btn');
     scissorsBtn.addEventListener('click', () => playRound("scissors", getComputerChoice()));
+
+const restartButton = document.getElementById('replay-Btn');
+    restartButton.addEventListener('click', () => {
+        computerScore = 0;
+        userScore = 0;
+        roundsPlayed = 1;
+        
+        scoreDiv.textContent = "";
+        const overallWinnerDiv = document.getElementById('overallWinner');
+        overallWinnerDiv.textContent = "";
+
+        const container = document.getElementById('resultContainer');
+            container.innerHTML = "" ;
+        
+        restartButton.style.display = 'none';})
