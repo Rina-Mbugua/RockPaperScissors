@@ -1,4 +1,9 @@
 body {
     background-image: url(Images/wallpaper.jpg);
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    color: red; }
+    
+div {
+    font-size: larger;
+}
